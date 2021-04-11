@@ -1,0 +1,1 @@
+/Users/daichi/.zprezto/runcoms/zshrc

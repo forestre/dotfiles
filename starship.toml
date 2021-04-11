@@ -1,0 +1,42 @@
+# Don't print a new line at the start of the prompt
+# add_newline = false
+
+# Use custom format
+#[│](bold green)$directory$rust$package
+format = """[$username\
+    $hostname\
+    $kubernetes\
+    $directory\
+    $git_branch\
+    $git_commit\
+    $git_state\
+    $git_status\
+    $hg_branch\
+    $docker_context\
+    $package\
+    $dotnet\
+    $elixir\
+    $elm\
+    $golang\
+    $haskell\
+    $java\
+    $julia\
+    $nodejs\
+    $php\
+    $python\
+    $ruby\
+    $conda\
+    $time\
+    $jobs\
+    $battery\
+    $rust\
+    $terraform\
+    $nix_shell\
+    $memory_usage\
+    $aws\
+    $env_var\
+    $crystal\
+    $cmd_duration\
+    $line_break\
+](bold green) [└─>](bold green)
+"""

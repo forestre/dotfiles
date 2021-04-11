@@ -1,0 +1,42 @@
+# Required
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# vim-airline
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+hook_add = '''
+ "  source ~/.config/nvim/dein/plugins/vim-airline.plug.vim
+    let g:airline_powerline_fonts = 1
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_theme = 'badwolf'
+'''
+
+# vim window theme
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+## vim-devicons
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+hook_add = '''
+    " フォルダアイコンの表示をon
+    let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+'''
+
+## tag highlight
+[[plugins]]
+repo = 'KeitaNakamura/highlighter.nvim'
+
+# コメント化，コメント解除，gc{motion}
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+# indent line
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+    source ~/.config/nvim/plugin/indentline.plug.vim
+'''
+
