@@ -11,13 +11,13 @@ augroup END
 let g:LanguageClient_autoStart = 1
 
 " カーソル位置の変数をハイライト
-augroup LCHighlight
-    autocmd!
-    autocmd CursorHold,CursorHoldI *.py,*.c,*.cpp call LanguageClient#textDocument_documentHighlight()
-augroup END
+" augroup LCHighlight
+"     autocmd!
+"     autocmd CursorHold,CursorHoldI *.py,*.c,*.cpp call LanguageClient#textDocument_documentHighlight()
+" augroup END
 
 " カーソル停止から更新までの時間をミリ秒で記入。デフォルトは4秒=4000
-set updatetime=50
+" set updatetime=500
 
 
 nnoremap <silent> <Space>h :call LanguageClient#textDocument_hover()<CR>

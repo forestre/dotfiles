@@ -26,8 +26,8 @@ hook_add = '''
 '''
 
 ## tag highlight
-[[plugins]]
-repo = 'KeitaNakamura/highlighter.nvim'
+# [[plugins]]
+# repo = 'KeitaNakamura/highlighter.nvim'
 
 # コメント化，コメント解除，gc{motion}
 [[plugins]]
@@ -40,3 +40,11 @@ hook_add = '''
     source ~/.config/nvim/plugin/indentline.plug.vim
 '''
 
+# # Lnaguage Client
+# [[plugins]]
+# repo = 'autozimu/LanguageClient-neovim'
+# rev = 'next'
+# build = 'bash install.sh'
+# hook_add = '''
+#     source ~/.config/nvim/plugin/languageClient.plug.vim
+# '''

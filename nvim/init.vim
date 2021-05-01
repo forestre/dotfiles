@@ -51,6 +51,7 @@ endif
 
 "" Settings below====================================================
 
+set ambiwidth=double "文字が崩れる問題を解決
 
 "" indentLine
 " let g:indentLine_setColors = 1
@@ -58,7 +59,7 @@ let g:indentLine_color_term = 7
 
 
 " tag highlight
-let g:highlighter#auto_update = 2
+" let g:highlighter#auto_update = 2
 
 
 " 選択行列の表示をカスタム(デフォルトだと長くて横幅を圧迫するので最小限に)
@@ -69,6 +70,17 @@ let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linen
 let g:airline#extensions#virtualenv#enabled = 1
 
 
+set smartindent
+set ruler
+set expandtab
+set tabstop=4
+set softtabstop=4
+set splitright
+set shiftwidth=4
+set clipboard=unnamed
+
+set signcolumn=yes
+highlight Signcolumn ctermbg=NONE
 
 " 検索
 set hlsearch
